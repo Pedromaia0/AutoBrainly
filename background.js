@@ -19,10 +19,6 @@ async function fetchData(urls, encoding="UTF-8") {
     return texts;
 }
 
-function getElementByXpath(path, page) {
-    return page.evaluate(path, page, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-  }
-
 function convertQuestion(question) {
     question = encodeURIComponent(question)
     if (question.endsWith('*')) {question = question.slice(0, -1);}

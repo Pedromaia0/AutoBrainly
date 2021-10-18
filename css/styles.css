@@ -1,0 +1,271 @@
+body {
+    width: 500px;
+    background-color: rgb(0, 0, 0);
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(17, 17, 17));
+}
+
+img#icon {
+    position: absolute;
+    width: 65px;
+    top: 11px;
+    left: 15px;
+}
+
+div.searchBox {
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 30px;
+}
+
+#searchBar {
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    width: 50%;
+    outline: none;
+    background-color: rgb(49, 47, 47);
+    padding: 10px;
+    color: white;
+}
+
+#searchSubmit {
+    cursor: pointer;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    border: 0px;
+    padding: 10px 9px 10px 9px; 
+}
+
+#searchBar:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+div.btn-box {
+    text-align: center;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    width: 30%;
+    height: 40px;
+    margin-bottom: 10px;   
+    font-size: 130%;
+    text-align: center;
+    background-color: #ed6161;
+    padding: 10px 0px 10px 0px;
+    border-radius: 40px;
+    border-width: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    background: none;
+    line-height: 0px;
+}
+
+#fill {
+    margin-right: 20px;
+}
+
+#del {
+    margin-left: 20px;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+button:active {
+    border: none;
+}
+
+#fill:hover {
+    background-color: rgb(5, 139, 0);
+    color: black;
+    transition: 350ms;
+}
+
+#del:hover {
+    background-color: crimson;
+    color: black;
+    transition: 350ms;
+}
+    
+#dynamic-results {
+    height: 200px;
+    overflow: hidden;
+    overflow-y: scroll;
+    color: yellow;
+    padding: 0px;
+    background-color: rgb(49, 47, 47);
+    border-radius: 10px;
+    /* margin-left: 8px;
+    margin-right: 8px; */
+    margin: 10px 8px 10px 8px;
+    border: 1px solid white ;
+}
+
+#dynamic-results p {
+    text-align: center;
+}
+
+#dynamic-results::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+div.answer-result {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    display: grid;
+    width: 95%;
+    text-align: left;
+    margin: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: rgb(150, 150, 150);
+    border-top: 1px solid oldlace;
+    border-bottom: 1px solid oldlace;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /* max-width: 55ch; */
+}
+
+div.answer-result:hover {
+    background-color: white;
+}
+
+#result-title {
+    text-indent: 20px;
+    color: white;
+    padding: 3px;
+    border: 1px solid white;
+    border-radius: 3px;
+    hyphens: auto;
+    word-wrap: break-word;
+    font-size: 100%;
+    width: auto;
+    margin: 10px;
+    margin-bottom: 50px;
+    padding-left: 10px;
+}
+
+#result-title img {
+    max-width: 90%;
+    height: auto;
+}
+
+.result-answer {
+    margin-left: 5px;
+    font-size: 110%;
+    background-color: rgb(150, 150, 150);
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 5px;
+}
+
+#result-return {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    padding: 0px;
+    color: white;
+    font-size: 400%;
+    font-weight: bold;
+    border: 0px;
+    opacity: 70%;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+}
+
+.result-copiar {
+    position: relative;
+    padding: 5px 4px 5px 4px;
+    color: white;
+    background: linear-gradient(to bottom right, rgb(92, 103, 255) , rgb(18, 48, 94));
+    border-radius: 5px;
+    border: 0px;
+}
+
+.result-copiar:active {
+    background-color: white;
+    background: none;
+}
+
+div.result-page {
+    padding-bottom: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 315px;
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: none;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 2px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+} 
+
+.spinner {
+    position: absolute;
+    top: 25%;
+    left: 42%;
+    text-align: center;
+}
+  
+.spinner > div {
+    width: 18px;
+    height: 18px;
+    background-color: white;
+  
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+  
+.spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+  
+.spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+  
+@-webkit-keyframes sk-bouncedelay {
+    0%, 80%, 100% { -webkit-transform: scale(0) }
+    40% { -webkit-transform: scale(1.0) }
+}
+  
+@keyframes sk-bouncedelay {
+    0%, 80%, 100% { 
+      -webkit-transform: scale(0);
+      transform: scale(0);
+} 40% { 
+      -webkit-transform: scale(1.0);
+      transform: scale(1.0);
+    }
+  }

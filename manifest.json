@@ -1,0 +1,27 @@
+{
+  "name": "AutoBrainly",
+  "version": "1.0.0",
+  "description": "Permite que você preencha formulários do Google Forms automáticamente com respostas do Brainly.",
+  "background": {
+    "scripts": ["background.js", "eventPage.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+    "matches": ["https://docs.google.com/forms/*"],
+    "js": ["content.js"]
+    }
+  ],
+  "icons": {"128": "images/icon_128.png"},
+  "browser_action": {
+    "default_icon": "images/icon_128.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "contextMenus",
+    "https://www.bing.com/*", "https://brainly.com.br/*", "https://www.sinonimos.com.br/*",
+    "storage"
+  ],
+  "web_accessible_resources": ["images/bloco.png", "images/link.png"],
+  "manifest_version": 2
+}

@@ -135,7 +135,6 @@ async function handleMessages(request, sender, sendResponse) {
             break;
     
         case 'popup':
-            // sendResponse({'content': await popupAnswers(request.content)})
             chrome.storage.local.set({"content": await popupAnswers(request.content)});
             sendResponse({'status': true})
             break;

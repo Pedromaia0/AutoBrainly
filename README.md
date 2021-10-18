@@ -19,5 +19,5 @@ Pull requests são bem-vindos. Para maiores mudanças, abra um issue primeiro pa
 
 Certifique-se de atualizar os testes conforme apropriado.
 
-## License
+## Licença
 [MIT](https://choosealicense.com/licenses/mit/)

@@ -37,14 +37,14 @@ window.onload = function() {
         });
         response = await resolveMes
         document.getElementsByClassName('spinner')[0].style.display = 'none';
-        if (response.content.length < 1 && check) {
+        if (check && response.content.length < 1) {
             let p = document.createElement('p');
             p.appendChild(document.createTextNode('Não foi possivel achar uma resposta :('));
             ul.appendChild(p);
             return;
         }
-        console.log(response);
         answersinfo = response.content
+        if (!answersinfo) return;
         for (i=0; i < answersinfo.length; i++) {
             let li = document.createElement('div')
             li.setAttribute('id', 'answer' + i);

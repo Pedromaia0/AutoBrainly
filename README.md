@@ -4,7 +4,7 @@ AutoBrainly é uma extensão para o chrome que permite uma fácil integração d
 
 ## Instalação
 
-Atraves da [Aba de extensões do Chrome](chrome://extensions/) no modo desenvolvedor ou pela interface de Command-line:
+Através da [Aba de extensões do Chrome](chrome://extensions/) no modo desenvolvedor ou pela interface de Command-line:
 
 ```bash
 <Caminho para o chrome> --load-extension=<Caminho para a extensão>

@@ -16,10 +16,6 @@ Através da [Aba de extensões do Chrome](chrome://extensions/) no modo desenvol
  - Mudança lexical de um texto
  - Checagem das respostas com menu interativo
 
-## Uso
-
-A extensão possui uso bastante intuitivo, caso haja dúvidas: [Vídeo](https://www.youtube.com/watch?v=o7Uhl4DaFsk/)
-
 ## Contribuições
 Pull requests são bem-vindos. Para maiores mudanças, abra um issue primeiro para discutir as suas mudanças
 
